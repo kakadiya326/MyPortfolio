@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kakadiya Chiranj | Backend & MERN Developer</title>
+  
+  <!-- Meta tags for SEO -->
+  <meta name="description" content="Backend-focused MERN Stack Developer specializing in Node.js, Express, MongoDB, and React. MCA candidate with experience building scalable REST APIs and clean web applications.">
+  <meta name="keywords" content="Kakadiya Chiranj, MERN Stack Developer, Backend Developer, React, Node.js, Express, MongoDB, Portfolio, Web Developer, Gujarat">
+  <meta name="author" content="Kakadiya Chiranj">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Floating Background Orbs for Aesthetic Visuals -->
+  <div class="background-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">Chiranj<span class="accent">.dev</span></a>
+      
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Resume Link (Download resume) -->
+      <div class="nav-actions">
+        <a href="Chiranj_Kakadiya_Resume.pdf" download="Chiranj_Kakadiya_Resume.pdf" class="btn btn-outline btn-sm">
+          <i data-lucide="download"></i> Resume
+        </a>
+        <a href="mailto:kakadiyachiranj044@gmail.com" class="btn btn-primary btn-sm">
+          <i data-lucide="mail"></i> Hire Me
+        </a>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav-overlay">
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#experience" class="mobile-link">Experience</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#certifications" class="mobile-link">Certifications</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+      <div class="mobile-actions" style="display: flex; flex-direction: column; gap: 1rem; width: 100%;">
+        <a href="Chiranj_Kakadiya_Resume.pdf" download="Chiranj_Kakadiya_Resume.pdf" class="btn btn-secondary btn-full text-center">
+          <i data-lucide="download"></i> Download Resume
+        </a>
+        <a href="mailto:kakadiyachiranj044@gmail.com" class="btn btn-primary btn-full text-center">
+          <i data-lucide="mail"></i> Get In Touch
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge-container">
+            <span class="pulse-badge"><span class="dot"></span> Available for Relocation</span>
+          </div>
+          <h1>Hi, I'm <span class="gradient-text">Kakadiya Chiranj</span></h1>
+          <h2 class="typewriter-container">I'm a <span id="typewriter" class="accent-text"></span></h2>
+          <p class="hero-lead">
+            Backend-focused MERN Stack Developer building scalable REST APIs, secure authentication systems, and database-driven applications with Node.js, Express, and MongoDB.
+          </p>
+          
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              View My Work <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              Let's Connect
+            </a>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/kakadiya326" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon">
+              <i data-lucide="github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/chiranj-kakadiya-b50817319" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon">
+              <i data-lucide="linkedin"></i>
+            </a>
+            <a href="mailto:kakadiyachiranj044@gmail.com" aria-label="Email" class="social-icon">
+              <i data-lucide="mail"></i>
+            </a>
+            <a href="tel:+919016291573" aria-label="Phone" class="social-icon">
+              <i data-lucide="phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="visual-card glass">
+            <div class="card-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="tab-name">server.js</span>
+            </div>
+            <div class="card-body code-font">
+              <div class="line"><span class="keyword">const</span> express = <span class="string">require</span>(<span class="value">'express'</span>);</div>
+              <div class="line"><span class="keyword">const</span> mongoose = <span class="string">require</span>(<span class="value">'mongoose'</span>);</div>
+              <div class="line"><span class="keyword">const</span> app = <span class="function">express</span>();</div>
+              <div class="line"></div>
+              <div class="line"><span class="comment">// MERN Stack Connection</span></div>
+              <div class="line">mongoose.<span class="function">connect</span>(process.env.MONGO_URI)</div>
+              <div class="line">&nbsp;&nbsp;.<span class="function">then</span>(() => console.<span class="function">log</span>(<span class="value">'DB Ready 🚀'</span>));</div>
+              <div class="line"></div>
+              <div class="line">app.<span class="function">use</span>(express.<span class="function">json</span>());</div>
+              <div class="line">app.<span class="function">use</span>(<span class="value">'/api/courses'</span>, courseRoutes);</div>
+              <div class="line">app.<span class="function">use</span>(<span class="value">'/api/auth'</span>, authRoutes);</div>
+              <div class="line"></div>
+              <div class="line">app.<span class="function">listen</span>(<span class="number">5000</span>, () => {</div>
+              <div class="line">&nbsp;&nbsp;console.<span class="function">log</span>(<span class="value">'Server running on port 5000'</span>);</div>
+              <div class="line">});</div>
+            </div>
+            
+            <!-- Floating MERN Badges -->
+            <div class="floating-badge badge-m">M</div>
+            <div class="floating-badge badge-e">E</div>
+            <div class="floating-badge badge-r">R</div>
+            <div class="floating-badge badge-n">N</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-alt">
+      <div class="container">
+        <div class="section-title-wrapper">
+          <span class="section-number">01.</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="title-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-info">
+            <p>
+              I am a backend-focused full-stack developer with a passion for structuring APIs, building performant database schemas, and securing systems. My technical journey began with BCA and is currently continuing through my MCA studies.
+            </p>
+            <p>
+              I specialize in the MERN (MongoDB, Express, React, Node.js) stack, optimizing queries with Mongoose, and structuring clean backend code. My focus is on writing maintainable, reusable, and performant code to solve real-world problems.
+            </p>
+            <p>
+              Currently located in Amreli, Gujarat, and I am highly motivated to relocate for a challenging development role.
+            </p>
+            
+            <div class="about-stats-grid">
+              <div class="stat-card glass">
+                <h3 class="stat-val">8.47</h3>
+                <p class="stat-label">MCA CGPA</p>
+              </div>
+              <div class="stat-card glass">
+                <h3 class="stat-val">8.51</h3>
+                <p class="stat-label">BCA CGPA</p>
+              </div>
+              <div class="stat-card glass">
+                <h3 class="stat-val">5★</h3>
+                <p class="stat-label">Python (HackerRank)</p>
+              </div>
+              <div class="stat-card glass">
+                <h3 class="stat-val">1★</h3>
+                <p class="stat-label">Problem Solving</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-education-timeline">
+            <h3 class="timeline-title"><i data-lucide="graduation-cap"></i> Education</h3>
+            
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass">
+                  <span class="timeline-date">2024 - Present</span>
+                  <h4>Master of Computer Applications (MCA)</h4>
+                  <p class="school">RK University</p>
+                  <p class="grade">CGPA: 8.47 / 10</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass">
+                  <span class="timeline-date">2021 - 2023</span>
+                  <h4>Bachelor of Computer Applications (BCA)</h4>
+                  <p class="school">Saurashtra University</p>
+                  <p class="grade">Score: 8.51 / 10</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass">
+                  <span class="timeline-date">2018 - 2020</span>
+                  <h4>Higher Secondary Certificate (HSC)</h4>
+                  <p class="school">GS&HSEB, Gandhinagar</p>
+                  <p class="grade">Score: 59.14%</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass">
+                  <span class="timeline-date">2017 - 2018</span>
+                  <h4>Secondary School Certificate (SSC)</h4>
+                  <p class="school">GS&HSEB, Gandhinagar</p>
+                  <p class="grade">Score: 59.33%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-title-wrapper">
+          <span class="section-number">02.</span>
+          <h2 class="section-title">My Skills</h2>
+          <div class="title-line"></div>
+        </div>
+
+        <div class="skills-tabs-container">
+          <div class="skills-tabs">
+            <button class="tab-btn active" data-tab="backend">Backend & DB</button>
+            <button class="tab-btn" data-tab="frontend">Frontend</button>
+            <button class="tab-btn" data-tab="languages">Languages</button>
+            <button class="tab-btn" data-tab="concepts">Tools & Concepts</button>
+          </div>
+
+          <div class="tab-content active" id="backend-tab">
+            <div class="skills-grid">
+              <div class="skill-card glass">
+                <div class="skill-icon"><i data-lucide="server"></i></div>
+                <h4>Node.js</h4>
+                <p>Express applications, routing, asynchronous handling</p>
+              </div>
+              <div class="skill-card glass">
+                <div class="skill-icon"><i data-lucide="activity"></i></div>
+                <h4>Express.js</h4>
+                <p>RESTful APIs, custom middleware, error handling</p>
+              </div>
+              <div class="skill-card glass">
+                <div class="skill-icon"><i data-lucide="database"></i></div>
+                <h4>MongoDB</h4>
+                <p>Document-based data modeling, aggregations, queries</p>
+              </div>
+              <div class="skill-card glass">
+                <div class="skill-icon"><i data-lucide="git-branch"></i></div>
+                <h4>Mongoose</h4>
+                <p>Schemas, validations, population queries, indexes</p>
+              </div>
+              <div class="skill-card glass">
+                <div class="skill-icon"><i data-lucide="table"></i></div>
+                <h4>MySQL</h4>
+                <p>Relational schema design, complex JOINs, query optimization</p>
+              </div>
+              <div class="skill-card glass">
+                <div class="skill-icon"><i data-lucide="terminal"></i></div>
+                <h4>REST APIs</h4>
+                <p>Scalable endpoint design, status codes, standard JSON payloads</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content" id="frontend-tab">
+            <div class="skills-grid">
+              <div class="skill-card glass">
+                <div class="skill-icon"><i data-lucide="atom"></i></div>
+                <h4>React.js</h4>
+                <p>Hooks, component structure, state management, Axios integration</p>
+              </div>
+              <div class="skill-card glass">
+                <div class="skill-icon"><i data-lucide="code"></i></div>
+                <h4>HTML5</h4>
+                <p>Semantic structuring, accessibility, SEO best practices</p>
+              </div>
+              <div class="skill-card glass">
+                <div class="skill-icon"><i data-lucide="palette"></i></div>
+                <h4>CSS3</h4>
+                <p>Custom properties, Flexbox, CSS Grid, responsiveness, keyframes</p>
+              </div>
+              <div class="skill-card glass">
+                <div class="skill-icon"><i data-lucide="laptop"></i></div>
+                <h4>JavaScript (ES6+)</h4>
+                <p>DOM manipulation, arrow functions, promises, async/await</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content" id="languages-tab">
+            <div class="skills-grid">
+              <div class="skill-card glass">
+                <div class="skill-icon"><i data-lucide="braces"></i></div>
+                <h4>JavaScript</h4>
+                <p>Primary language for both full-stack frontend and backend development</p>
+              </div>
+              <div class="skill-card glass">
+                <div class="skill-icon"><i data-lucide="binary"></i></div>
+                <h4>Python</h4>
+                <p>Scripting, basic scripting algorithms, and data libraries (NumPy, Pandas)</p>
+              </div>
+              <div class="skill-card glass">
+                <div class="skill-icon"><i data-lucide="coffee"></i></div>
+                <h4>Java</h4>
+                <p>Object-oriented concepts, structured algorithms, class architectures</p>
+              </div>
+              <div class="skill-card glass">
+                <div class="skill-icon"><i data-lucide="hash"></i></div>
+                <h4>SQL</h4>
+                <p>Relational database queries, table modeling, and integrity constraints</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content" id="concepts-tab">
+            <div class="skills-grid">
+              <div class="skill-card glass">
+                <div class="skill-icon"><i data-lucide="shield-check"></i></div>
+                <h4>JWT Authentication</h4>
+                <p>Secure token-based auth, cookie-handling, and role-based route protection</p>
+              </div>
+              <div class="skill-card glass">
+                <div class="skill-icon"><i data-lucide="layers"></i></div>
+                <h4>OOP & Data Structures</h4>
+                <p>Classes, inheritance, problem-solving, HackerRank practices</p>
+              </div>
+              <div class="skill-card glass">
+                <div class="skill-icon"><i data-lucide="git-pull-request"></i></div>
+                <h4>Git & GitHub</h4>
+                <p>Branch management, pull requests, version control, collaboration workflows</p>
+              </div>
+              <div class="skill-card glass">
+                <div class="skill-icon"><i data-lucide="send"></i></div>
+                <h4>Postman</h4>
+                <p>API endpoint testing, authorization headers, environment configs</p>
+              </div>
+              <div class="skill-card glass">
+                <div class="skill-icon"><i data-lucide="network"></i></div>
+                <h4>API Design</h4>
+                <p>Scalable endpoint mapping, route protection, and REST architecture</p>
+              </div>
+              <div class="skill-card glass">
+                <div class="skill-icon"><i data-lucide="arrow-left-right"></i></div>
+                <h4>Axios</h4>
+                <p>Promise-based HTTP client, request/response interceptors, and async processing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section bg-alt">
+      <div class="container">
+        <div class="section-title-wrapper">
+          <span class="section-number">03.</span>
+          <h2 class="section-title">Experience</h2>
+          <div class="title-line"></div>
+        </div>
+
+        <div class="experience-card glass">
+          <div class="exp-header">
+            <div class="exp-role">
+              <h3>Web Development Intern</h3>
+              <span class="exp-company">Krushki IT E-Commerce Pvt. Ltd.</span>
+            </div>
+            <span class="exp-date">Aug 2025 – Feb 2026</span>
+          </div>
+          
+          <ul class="exp-duties">
+            <li>
+              <i data-lucide="check-circle-2" class="bullet-icon"></i>
+              <span>Developed and optimized responsive web applications using React.js, improving UI responsiveness and user experience.</span>
+            </li>
+            <li>
+              <i data-lucide="check-circle-2" class="bullet-icon"></i>
+              <span>Integrated RESTful APIs for dynamic data handling, reducing page load times and improving overall application efficiency.</span>
+            </li>
+            <li>
+              <i data-lucide="check-circle-2" class="bullet-icon"></i>
+              <span>Identified, debugged, and resolved frontend and api communication bugs, increasing system stability.</span>
+            </li>
+            <li>
+              <i data-lucide="check-circle-2" class="bullet-icon"></i>
+              <span>Collaborated effectively with cross-functional teams in an agile setting, ensuring timely delivery of sprints.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-title-wrapper">
+          <span class="section-number">04.</span>
+          <h2 class="section-title">Selected Projects</h2>
+          <div class="title-line"></div>
+        </div>
+
+        <div class="projects-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="mern">MERN Stack</button>
+          <button class="filter-btn" data-filter="ai-ml">AI & ML</button>
+          <button class="filter-btn" data-filter="utility">Utilities</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- StudentSphere -->
+          <div class="project-card glass" data-category="mern">
+            <div class="project-image">
+              <img src="assets/studentsphere.svg" alt="StudentSphere LMS Mockup">
+              <div class="project-tags">
+                <span class="badge">Node.js</span>
+                <span class="badge">React</span>
+                <span class="badge">MongoDB</span>
+                <span class="badge">Express</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>StudentSphere (LMS)</h3>
+              <p class="project-desc">
+                A scalable Learning Management System with role-based access control (Admin, Instructor, Student). Built 10+ RESTful APIs for course management, assignments, and grading.
+              </p>
+              <ul class="project-highlights">
+                <li><i data-lucide="terminal" class="code-icon"></i> Secure JWT-based Authentication</li>
+                <li><i data-lucide="database" class="code-icon"></i> Optimized Mongoose query modeling</li>
+                <li><i data-lucide="mail" class="code-icon"></i> Email verification & OTP support</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/kakadiya326/student-sphere-lms" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Shopper -->
+          <div class="project-card glass" data-category="mern">
+            <div class="project-image">
+              <img src="assets/shopper.svg" alt="Shopper E-Commerce Mockup">
+              <div class="project-tags">
+                <span class="badge">React</span>
+                <span class="badge">Express</span>
+                <span class="badge">MongoDB</span>
+                <span class="badge">JWT</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Shopper E-Commerce</h3>
+              <p class="project-desc">
+                Full-stack e-commerce platform featuring product listings, shopping cart functionalities, checkout processes, and a dedicated admin CRUD dashboard.
+              </p>
+              <ul class="project-highlights">
+                <li><i data-lucide="shield" class="code-icon"></i> Dual dashboards (User / Admin)</li>
+                <li><i data-lucide="shopping-cart" class="code-icon"></i> Optimized state & cart management</li>
+                <li><i data-lucide="zap" class="code-icon"></i> Efficient product caching & API responses</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/kakadiya326/shopper-ecommerce-mern" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trade Opportunity API -->
+          <div class="project-card glass" data-category="ai-ml">
+            <div class="project-image">
+              <img src="assets/tradeapi.svg" alt="Trade Opportunity API Mockup">
+              <div class="project-tags">
+                <span class="badge">FastAPI</span>
+                <span class="badge">Python</span>
+                <span class="badge">Gemini AI</span>
+                <span class="badge">SlowAPI</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Trade Opportunity API</h3>
+              <p class="project-desc">
+                A FastAPI-based backend service that analyzes global trade opportunities using AI. Integrates Google Gemini LLM API to collect market parameters and generate structured insights.
+              </p>
+              <ul class="project-highlights">
+                <li><i data-lucide="cpu" class="code-icon"></i> Google Gemini AI integration</li>
+                <li><i data-lucide="shield" class="code-icon"></i> API Key Security & session tracking</li>
+                <li><i data-lucide="activity" class="code-icon"></i> Rate limiting (SlowAPI) implementation</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/kakadiya326/trade-opportunities-api" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Machine Learning Weather Prediction -->
+          <div class="project-card glass" data-category="ai-ml">
+            <div class="project-image">
+              <img src="assets/weatherpredictor.svg" alt="Weather Humidity Predictor Mockup">
+              <div class="project-tags">
+                <span class="badge">Python</span>
+                <span class="badge">Scikit-Learn</span>
+                <span class="badge">Flask</span>
+                <span class="badge">NumPy/Pandas</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Weather Humidity Predictor</h3>
+              <p class="project-desc">
+                A machine learning project that predicts humidity levels based on weather parameters. Trains and compares regression models (Linear, Ridge, Lasso, Random Forest) for accuracy.
+              </p>
+              <ul class="project-highlights">
+                <li><i data-lucide="bar-chart-2" class="code-icon"></i> Scikit-Learn regression models</li>
+                <li><i data-lucide="sliders" class="code-icon"></i> Preprocessing & scaling pipelines</li>
+                <li><i data-lucide="server" class="code-icon"></i> Model deployment via a Flask API</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/kakadiya326/Machine-Learning" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hostel Finder -->
+          <div class="project-card glass" data-category="utility">
+            <div class="project-image">
+              <img src="assets/hostelfinder.svg" alt="Hostel Finder App Mockup">
+              <div class="project-tags">
+                <span class="badge">React.js</span>
+                <span class="badge">JSON-Server</span>
+                <span class="badge">CSS Grid</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Hostel Finder</h3>
+              <p class="project-desc">
+                A simple frontend application to browse, search, and view details of hostels. Leverages a mock REST API server (`json-server`) for persistent states.
+              </p>
+              <ul class="project-highlights">
+                <li><i data-lucide="search" class="code-icon"></i> Filter-by-location criteria</li>
+                <li><i data-lucide="sliders" class="code-icon"></i> Interactive details viewing</li>
+                <li><i data-lucide="smartphone" class="code-icon"></i> High-performance responsive layouts</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/kakadiya326/hostel-finder-app" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Voice-to-Text WebApp -->
+          <div class="project-card glass" data-category="utility">
+            <div class="project-image">
+              <img src="assets/voiceapp.svg" alt="Voice-to-Text WebApp Mockup">
+              <div class="project-tags">
+                <span class="badge">JavaScript</span>
+                <span class="badge">Web Speech API</span>
+                <span class="badge">HTML5</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Voice-to-Text App</h3>
+              <p class="project-desc">
+                An interactive web utility converting speech to written text in real-time. Features copy-to-clipboard actions and adjustable speech settings.
+              </p>
+              <ul class="project-highlights">
+                <li><i data-lucide="mic" class="code-icon"></i> Direct browser Web Speech API</li>
+                <li><i data-lucide="copy" class="code-icon"></i> Instant copy and clipboard utility</li>
+                <li><i data-lucide="sparkles" class="code-icon"></i> Smooth micro-interactions</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/kakadiya326/voice-to-text-webapp" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section bg-alt">
+      <div class="container">
+        <div class="section-title-wrapper">
+          <span class="section-number">05.</span>
+          <h2 class="section-title">Verified Certifications</h2>
+          <div class="title-line"></div>
+        </div>
+
+        <div class="certs-grid">
+          <!-- SQL Advanced -->
+          <div class="cert-card glass">
+            <div class="cert-badge"><i data-lucide="database"></i></div>
+            <div class="cert-content">
+              <h4>SQL (Advanced)</h4>
+              <p class="cert-issuer">HackerRank Certified</p>
+              <a href="https://www.hackerrank.com/certificates/f65731dc9a72" target="_blank" rel="noopener noreferrer" class="cert-link">
+                Verify Credentials <i data-lucide="external-link"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- SQL Intermediate -->
+          <div class="cert-card glass">
+            <div class="cert-badge"><i data-lucide="database"></i></div>
+            <div class="cert-content">
+              <h4>SQL (Intermediate)</h4>
+              <p class="cert-issuer">HackerRank Certified</p>
+              <a href="https://www.hackerrank.com/certificates/35a405f8c8fd" target="_blank" rel="noopener noreferrer" class="cert-link">
+                Verify Credentials <i data-lucide="external-link"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- SQL Basic -->
+          <div class="cert-card glass">
+            <div class="cert-badge"><i data-lucide="database"></i></div>
+            <div class="cert-content">
+              <h4>SQL (Basic)</h4>
+              <p class="cert-issuer">HackerRank Certified</p>
+              <a href="https://www.hackerrank.com/certificates/2d8be1b55eec" target="_blank" rel="noopener noreferrer" class="cert-link">
+                Verify Credentials <i data-lucide="external-link"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Python Basic -->
+          <div class="cert-card glass">
+            <div class="cert-badge"><i data-lucide="terminal"></i></div>
+            <div class="cert-content">
+              <h4>Python (Basic)</h4>
+              <p class="cert-issuer">HackerRank Certified</p>
+              <a href="https://www.hackerrank.com/certificates/5e7371e31f8f" target="_blank" rel="noopener noreferrer" class="cert-link">
+                Verify Credentials <i data-lucide="external-link"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- JavaScript Basic -->
+          <div class="cert-card glass">
+            <div class="cert-badge"><i data-lucide="code-2"></i></div>
+            <div class="cert-content">
+              <h4>JavaScript (Basic)</h4>
+              <p class="cert-issuer">HackerRank Certified</p>
+              <a href="https://www.hackerrank.com/certificates/93db4c105a76" target="_blank" rel="noopener noreferrer" class="cert-link">
+                Verify Credentials <i data-lucide="external-link"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- CSS Basic -->
+          <div class="cert-card glass">
+            <div class="cert-badge"><i data-lucide="palette"></i></div>
+            <div class="cert-content">
+              <h4>CSS (Basic)</h4>
+              <p class="cert-issuer">HackerRank Certified</p>
+              <a href="https://www.hackerrank.com/certificates/14b47cd9d77f" target="_blank" rel="noopener noreferrer" class="cert-link">
+                Verify Credentials <i data-lucide="external-link"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-title-wrapper">
+          <span class="section-number">06.</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="title-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Let's start a conversation</h3>
+            <p class="contact-lead">
+              I'm currently looking for a full-time position as a Backend or MERN Stack Developer. If you have any opportunities or questions, feel free to reach out. I will respond as soon as possible!
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <div class="detail-icon"><i data-lucide="mail"></i></div>
+                <div class="detail-text">
+                  <span class="label">Email Me</span>
+                  <a href="mailto:kakadiyachiranj044@gmail.com" class="value">kakadiyachiranj044@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="detail-icon"><i data-lucide="phone"></i></div>
+                <div class="detail-text">
+                  <span class="label">Call Me</span>
+                  <a href="tel:+919016291573" class="value">+91 90162 91573</a>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="detail-icon"><i data-lucide="map-pin"></i></div>
+                <div class="detail-text">
+                  <span class="label">Location</span>
+                  <span class="value">Amreli, Gujarat — Open to Relocation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-container glass">
+            <!-- Form Card Wrapper -->
+            <form id="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="John Doe" required>
+                  <span class="error-msg" id="name-error">Name is required</span>
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                  <span class="error-msg" id="email-error">Please enter a valid email</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Project collaboration..." required>
+                <span class="error-msg" id="subject-error">Subject is required</span>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Hi Chiranj, I'd like to talk about..." required></textarea>
+                <span class="error-msg" id="message-error">Message cannot be empty</span>
+              </div>
+
+              <button type="submit" id="submit-btn" class="btn btn-primary btn-full">
+                <span class="btn-text">Send Message</span>
+                <span class="spinner hidden"></span>
+              </button>
+            </form>
+            
+            <!-- Success Overlay State -->
+            <div id="form-success" class="form-success-state hidden">
+              <div class="success-icon-wrapper">
+                <i data-lucide="send" class="success-icon"></i>
+              </div>
+              <h3>Message Sent!</h3>
+              <p>Thank you for reaching out. I'll get back to you shortly.</p>
+              <button id="reset-form-btn" class="btn btn-secondary btn-sm">Send another message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#hero" class="logo">Chiranj<span class="accent">.dev</span></a>
+        <p>MERN Stack & Backend Developer</p>
+      </div>
+      <div class="footer-info">
+        <p>&copy; 2026 Kakadiya Chiranj. All rights reserved.</p>
+        <p class="made-by">Designed with professional excellence</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Code -->
+  <script src="script.js"></script>
+</body>
+</html>
