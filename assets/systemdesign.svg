@@ -1,0 +1,19 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="700" rx="32" fill="#0B1020"/>
+  <rect x="60" y="70" width="1080" height="560" rx="24" fill="#111827" stroke="#2DD4BF" stroke-width="2"/>
+  <rect x="100" y="120" width="240" height="140" rx="16" fill="#1F2937"/>
+  <rect x="100" y="300" width="240" height="220" rx="16" fill="#1F2937"/>
+  <rect x="380" y="120" width="320" height="400" rx="16" fill="#1F2937"/>
+  <rect x="740" y="120" width="320" height="180" rx="16" fill="#1F2937"/>
+  <rect x="740" y="340" width="320" height="180" rx="16" fill="#1F2937"/>
+  <circle cx="150" cy="170" r="36" fill="#6366F1"/>
+  <circle cx="150" cy="390" r="28" fill="#14B8A6"/>
+  <path d="M420 190H650" stroke="#94A3B8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M420 250H610" stroke="#94A3B8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M420 310H560" stroke="#94A3B8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M780 190H980" stroke="#94A3B8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M780 410H940" stroke="#94A3B8" stroke-width="8" stroke-linecap="round"/>
+  <rect x="780" y="370" width="100" height="20" rx="10" fill="#6366F1"/>
+  <rect x="780" y="150" width="120" height="20" rx="10" fill="#14B8A6"/>
+  <text x="100" y="610" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="40" font-weight="700">System Design &amp; SOLID</text>
+</svg>
