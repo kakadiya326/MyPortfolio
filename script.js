@@ -68,10 +68,10 @@ document.addEventListener('DOMContentLoaded', () => {
      ========================================================================== */
   const typewriterElement = document.getElementById('typewriter');
   const phrases = [
-    'Backend Developer.',
-    'MERN Stack Engineer.',
-    'REST API Architect.',
-    'Problem Solver.'
+    'MERN Stack Developer.',
+    'React Developer.',
+    'REST API Engineer.',
+    'Full-Stack Developer.'
   ];
   
   let phraseIndex = 0;
