@@ -1,69 +1,43 @@
-# Kakadiya Chiranj — Developer Portfolio
+# Chiranj Kakadiya — Developer Portfolio
 
-Modern, high-performance personal portfolio for **Kakadiya Chiranj** (Full-Stack & Backend Developer), built with **React 19**, **TypeScript**, **Vite 6**, **Tailwind CSS v4**, **Motion**, **GSAP**, and **Lenis Smooth Scroll**.
-
----
-
-## 🚀 Features
-
-- **Hero & Interactive Terminal Card**: Live developer specs, relocation availability, and direct resume download.
-- **Academic & Experience Showcase**:
-  - Software Engineer at Sensedge Technologies, Pune
-  - Web Development Intern at Krushki IT E-Commerce Pvt. Ltd.
-  - MCA (RK University, CGPA 8.47) & BCA (Saurashtra University, CGPA 8.51)
-  - Vector India Full Stack (MERN) specialized engineering training
-- **Interactive Projects Showcase**: Real deployed projects with category filtering (`MERN Stack`, `AI & ML`, `Utilities`):
-  - **StudentSphere LMS**: 10+ RESTful APIs, JWT Auth, Mongoose aggregation pipelines.
-  - **Shopper E-Commerce**: Dual User/Admin panels, cart state management, product CRUD.
-  - **AI Trade Opportunity API**: FastAPI, Google Gemini AI integration, SlowAPI rate limiting.
-  - **Weather Humidity Predictor**: Scikit-Learn regression models, Flask deployment.
-  - **System Design & SOLID Principles**: Clean architecture, design patterns, Java file handling.
-  - **Hostel Finder**: React & JSON-Server dynamic accommodation filtering.
-  - **Voice-to-Text App**: Web Speech API real-time audio recognition.
-- **Verified Credentials**: 6 verified HackerRank certifications (SQL Advanced, Intermediate, Basic, Python, JavaScript, CSS).
-- **Interactive Contact**: Working inquiry submission, copy-to-clipboard email feedback, and direct contact details.
+Clean, fast, and self-contained personal portfolio for **Chiranj Kakadiya** (Full-Stack & Backend Developer), built in **100% Pure Vanilla HTML, CSS, and JavaScript**.
 
 ---
 
-## 🛡️ Security & Hardening (Vulnerabilities Removed)
+## 🎨 Design Theme & Aesthetics
 
-1. **Eliminated Insecure Backend & AI Backdoors**:
-   - Removed rogue Python FastAPI backend template (`server/`) containing hardcoded backdoor accounts (`demo@example.com` / `demo1234`), open CORS (`*`), and arbitrary SQLite document CRUD (`/api/c/{col}`).
-   - Removed external AI platform telemetry and secret broker scripts (`orvis.py`, `orvis.ts`).
-2. **Reverse Tabnabbing Protection (CWE-1022)**:
-   - Added `rel="noopener noreferrer"` to all external links.
-3. **Content Security Policy (CSP) & Defense-in-Depth**:
-   - Implemented strict CSP meta tags, `X-Content-Type-Options: nosniff`, and `Referrer-Policy: strict-origin-when-cross-origin`.
-4. **Encoding & Hygiene**:
-   - Resolved all corrupted Unicode characters and encoding artifacts from the template.
-   - Cleaned package dependencies (`0 vulnerabilities` in `npm audit`).
+- **Palette**: Warm ivory canvas (`#f6f4ef`), warm linen/sand (`#ede8df`), deep espresso ink (`#1c1a17`), terracotta accents (`#9e4526`), and soft gold (`#d4a359`).
+- **Typography**:
+  - Headlines & Monogram: **Fraunces** serif
+  - Body & Navigation: **Plus Jakarta Sans**
+  - Metadata & Badges: **JetBrains Mono**
+- **Signature Visuals**:
+  - Split Hero with luxury espresso monogram card (`CK` in Fraunces italic serif)
+  - Terracotta-accented stats counter (MCA CGPA: 8.47, BCA CGPA: 8.51, 150+ DSA, 4★ HackerRank, 10+ REST APIs)
+  - Editorial Experience timeline (Sensedge Technologies, Krushki IT, Vector India MERN Training)
+  - Signature deep-ink Projects section (`#1c1a17`) with category filtering and custom SVG project diagrams
+  - 6 verified HackerRank certifications with direct verification links
+  - Interactive contact section & direct resume download
 
 ---
 
-## 🛠️ Local Development
+## 🛡️ Security & Clean Code (AI Defect Elimination)
 
-### Prerequisites
-- Node.js (v18+)
-- npm (v9+)
+- **Zero Insecure Backend Code**: Completely removed the rogue Python server template (`server/`) containing backdoor credentials (`demo@example.com` / `demo1234`), open CORS, and arbitrary SQLite database CRUD.
+- **Zero AI Telemetry**: Removed external platform broker scripts (`orvis.py`, `orvis.ts`).
+- **Reverse Tabnabbing Protected (CWE-1022)**: All external links include `rel="noopener noreferrer"`.
+- **Content Security Policy**: Hardened with strict CSP, `X-Content-Type-Options: nosniff`, and `Referrer-Policy`.
+- **Clean Typography**: Corrected all corrupted Unicode encoding artifacts (`A`, `?`, `Ac 2026`).
 
-### Installation
-```bash
-npm install
-```
+---
 
-### Start Local Development Server
-```bash
-npm run dev
-```
-Runs the Vite development server on `http://127.0.0.1:5173/`.
+## 🚀 How to Run
 
-### Production Build
-```bash
-npm run build
-```
-Type-checks TypeScript and compiles optimized assets into `dist/`.
+No build commands, compilers, or Node/npm dependencies are required!
 
-### Preview Production Build
-```bash
-npm run preview
-```
+### Option 1: VS Code Live Server
+- Open `index.html` in VS Code.
+- Right-click and choose **"Open with Live Server"** (or click **"Go Live"** at the bottom).
+
+### Option 2: Direct Browser
+- Simply double-click `index.html` in your file explorer to open it in Chrome, Edge, Firefox, or Safari.
