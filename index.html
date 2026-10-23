@@ -3,71 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#07090e" />
+    <meta name="theme-color" content="#f6f4ef" />
 
     <!-- Security Meta Tags -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.bunny.net; font-src 'self' https://fonts.gstatic.com https://fonts.bunny.net data:; img-src 'self' data: https: blob:; connect-src 'self' ws: wss:; object-src 'none'; base-uri 'self';"
+      content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https: blob:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self';"
     />
 
-    <title>Kakadiya Chiranj | Full-Stack & Backend Developer</title>
+    <title>Chiranj Kakadiya — Full-Stack Developer</title>
     <meta
       name="description"
-      content="Portfolio of Kakadiya Chiranj, a Full-Stack & Backend Developer specializing in React.js, Node.js, Express, MongoDB, FastAPI, and Java."
+      content="Chiranj Kakadiya is a Full-Stack Developer in Pune building scalable web applications with React, Node.js, Express, and MongoDB."
     />
     <meta
       name="keywords"
-      content="Kakadiya Chiranj, Full-Stack Developer, Backend Developer, MERN Stack, React.js, Node.js, Express.js, MongoDB, FastAPI, Java, Pune, Gujarat, Software Engineer"
+      content="Chiranj Kakadiya, Full-Stack Developer, Backend Developer, MERN Stack, React.js, Node.js, Express.js, MongoDB, FastAPI, Java, Pune, Gujarat, Software Engineer"
     />
-    <meta name="author" content="Kakadiya Chiranj" />
+    <meta name="author" content="Chiranj Kakadiya" />
     <link rel="canonical" href="https://myportfolio.kakadiyachir044.workers.dev/" />
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Kakadiya Chiranj | Full-Stack & Backend Developer" />
+    <meta property="og:title" content="Chiranj Kakadiya — Full-Stack Developer" />
     <meta
       property="og:description"
-      content="Full-Stack & Backend Developer building scalable web applications with React, Node.js, Express, and MongoDB."
+      content="Full-Stack Developer building scalable web applications with React, Node.js, Express, and MongoDB."
     />
     <meta property="og:url" content="https://myportfolio.kakadiyachir044.workers.dev/" />
     <meta property="og:image" content="./og-image.jpg" />
-    <meta property="og:site_name" content="Kakadiya Chiranj" />
+    <meta property="og:site_name" content="Chiranj Kakadiya" />
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Kakadiya Chiranj | Full-Stack & Backend Developer" />
+    <meta name="twitter:title" content="Chiranj Kakadiya — Full-Stack Developer" />
     <meta
       name="twitter:description"
-      content="Full-Stack & Backend Developer building scalable web applications with React, Node.js, Express, and MongoDB."
+      content="Full-Stack Developer building scalable web applications with React, Node.js, Express, and MongoDB."
     />
     <meta name="twitter:image" content="./og-image.jpg" />
 
-    <!-- Icons & Manifest -->
+    <!-- Favicon & Web Manifest -->
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="apple-touch-icon" href="./favicon.svg" />
     <link rel="manifest" href="./manifest.webmanifest" />
 
-    <!-- Google Fonts: Outfit, Plus Jakarta Sans, JetBrains Mono -->
+    <!-- Google Fonts: Fraunces Serif, Plus Jakarta Sans, JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Compiled Stylesheet -->
-    <link rel="stylesheet" crossorigin href="./dist/assets/app.css" />
+    <!-- Pure Vanilla Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
-        "name": "Kakadiya Chiranj",
-        "alternateName": "Chiranj Kakadiya",
+        "name": "Chiranj Kakadiya",
         "jobTitle": "Full-Stack Developer",
         "url": "https://myportfolio.kakadiyachir044.workers.dev/",
         "sameAs": [
@@ -88,9 +86,819 @@
     </script>
   </head>
   <body>
-    <div id="root"></div>
+    <!-- Header / Navigation Bar -->
+    <header class="site-header" id="header">
+      <div class="container nav-container">
+        <a href="#hero" class="brand-logo" aria-label="Home">
+          <span class="brand-monogram">CK</span>
+          <span>Chiranj Kakadiya</span>
+        </a>
 
-    <!-- Application JavaScript Bundle -->
-    <script type="module" crossorigin src="./dist/assets/app.js"></script>
+        <!-- Desktop Navigation Links -->
+        <nav class="nav-menu" aria-label="Main Navigation">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#certifications" class="nav-link">Certifications</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Desktop Actions -->
+        <div class="nav-actions">
+          <a
+            href="Chiranj_Kakadiya_Resume.pdf"
+            download="Chiranj_Kakadiya_Resume.pdf"
+            class="btn btn-secondary btn-sm"
+          >
+            Download Resume
+          </a>
+          <a href="#contact" class="btn btn-primary btn-sm">
+            Hire Me
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button
+          type="button"
+          class="nav-toggle-btn"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu Drawer -->
+      <div class="mobile-menu-drawer">
+        <nav class="mobile-nav-links">
+          <a href="#about" class="mobile-nav-link">About</a>
+          <a href="#experience" class="mobile-nav-link">Experience</a>
+          <a href="#projects" class="mobile-nav-link">Projects</a>
+          <a href="#skills" class="mobile-nav-link">Skills</a>
+          <a href="#certifications" class="mobile-nav-link">Certifications</a>
+          <a href="#contact" class="mobile-nav-link">Contact</a>
+        </nav>
+        <div class="mobile-nav-actions">
+          <a
+            href="Chiranj_Kakadiya_Resume.pdf"
+            download="Chiranj_Kakadiya_Resume.pdf"
+            class="btn btn-secondary btn-sm"
+          >
+            Download Resume (PDF)
+          </a>
+          <a href="#contact" class="btn btn-primary btn-sm">
+            Hire Me
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="section hero-section" id="hero">
+        <div class="container hero-grid">
+          <div>
+            <div class="status-pill">
+              <span class="pulse-dot"></span>
+              <span>FULL-STACK DEVELOPER • PUNE, INDIA</span>
+            </div>
+
+            <h1 class="hero-title">
+              I build web apps<br />
+              that <span class="text-italic-accent">work end to end</span>.
+            </h1>
+
+            <p class="lead-text">
+              Hi, I'm Chiranj Kakadiya. I work with React, Node.js, Express, MongoDB, FastAPI, and Java to build
+              authentication, REST APIs, automation, and clean, responsive interfaces.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                View projects &rarr;
+              </a>
+              <a
+                href="Chiranj_Kakadiya_Resume.pdf"
+                download="Chiranj_Kakadiya_Resume.pdf"
+                class="btn btn-secondary"
+              >
+                Download Resume
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                Get in touch
+              </a>
+            </div>
+
+            <div class="hero-social-links">
+              <span>Connect:</span>
+              <a href="https://github.com/kakadiya326" target="_blank" rel="noopener noreferrer">
+                GitHub &nearr;
+              </a>
+              <span>•</span>
+              <a href="https://www.linkedin.com/in/chiranj-kakadiya-b50817319" target="_blank" rel="noopener noreferrer">
+                LinkedIn &nearr;
+              </a>
+              <span>•</span>
+              <button type="button" class="copy-email-btn" style="color: inherit; font-size: inherit;">
+                Copy Email
+              </button>
+            </div>
+          </div>
+
+          <!-- Hero Monogram Card (Editorial Template Signature Visual) -->
+          <div class="hero-visual-card">
+            <div class="monogram-box">
+              <span class="monogram-text">CK</span>
+            </div>
+            <div class="hero-floating-badge">
+              <p class="badge-role">Software Engineer</p>
+              <p class="badge-company">Sensedge Technologies, Pune</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Counter Section -->
+      <section class="section section-alt" style="padding-top: 3.5rem; padding-bottom: 3.5rem;">
+        <div class="container">
+          <div class="stats-grid">
+            <div class="stat-item">
+              <p class="stat-number">8.47</p>
+              <p class="stat-label">CGPA in MCA (RK University)</p>
+            </div>
+            <div class="stat-item">
+              <p class="stat-number">8.51</p>
+              <p class="stat-label">CGPA in BCA (Saurashtra Univ.)</p>
+            </div>
+            <div class="stat-item">
+              <p class="stat-number">150+</p>
+              <p class="stat-label">DSA Problems Solved</p>
+            </div>
+            <div class="stat-item">
+              <p class="stat-number">4★</p>
+              <p class="stat-label">HackerRank Problem Solving</p>
+            </div>
+            <div class="stat-item">
+              <p class="stat-number">10+</p>
+              <p class="stat-label">REST APIs for StudentSphere LMS</p>
+            </div>
+            <div class="stat-item">
+              <p class="stat-number">MERN</p>
+              <p class="stat-label">Full-Stack Training Completed</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="section" id="about">
+        <div class="container about-grid">
+          <div>
+            <p class="eyebrow">ABOUT</p>
+            <h2 class="section-title">Backend depth, frontend polish.</h2>
+          </div>
+          <div>
+            <p class="lead-text">
+              Full-Stack Developer with hands-on experience building web applications using React.js, Node.js, Express.js,
+              MongoDB, and REST APIs. I build end-to-end features including authentication, role-based access control,
+              API integrations, data management, and responsive user interfaces. Interested in scalable web platforms,
+              automation tools, and AI-enabled applications.
+            </p>
+
+            <div class="training-card">
+              <h3 class="training-title">Full Stack Development (MERN Stack)</h3>
+              <p class="training-meta">Vector India Pvt. Ltd., Hyderabad &bull; July 2025 – Mar 2026</p>
+              <p class="training-desc">
+                Covered Python, Core Java, HTML, CSS, Bootstrap, JavaScript, React.js, MySQL, MongoDB, Node.js, and
+                Express.js, and built StudentSphere as the comprehensive course capstone project.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section class="section section-alt" id="experience">
+        <div class="container">
+          <p class="eyebrow">EXPERIENCE</p>
+          <h2 class="section-title">Where I've been building.</h2>
+
+          <div class="experience-list">
+            <!-- Software Engineer at Sensedge -->
+            <div class="experience-item">
+              <div>
+                <p class="exp-period">June 2026 – Present</p>
+                <h3 class="exp-role">Software Engineer</h3>
+                <p class="exp-company">Sensedge Technologies, Pune</p>
+              </div>
+              <ul class="exp-duties">
+                <li class="exp-duty-item">
+                  <span class="bullet-dot"></span>
+                  <span>Developed and maintained backend and full-stack modules using Node.js, Express.js, Flutter, and MongoDB.</span>
+                </li>
+                <li class="exp-duty-item">
+                  <span class="bullet-dot"></span>
+                  <span>Designed and integrated REST APIs for CRM and business workflow enterprise applications.</span>
+                </li>
+                <li class="exp-duty-item">
+                  <span class="bullet-dot"></span>
+                  <span>Worked on notification, chat, and automation features to improve operational workflows.</span>
+                </li>
+                <li class="exp-duty-item">
+                  <span class="bullet-dot"></span>
+                  <span>Integrated third-party APIs and handled API-based data exchange between distributed application services.</span>
+                </li>
+                <li class="exp-duty-item">
+                  <span class="bullet-dot"></span>
+                  <span>Debugged existing workflows and shipped reliability fixes for production-related issues.</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Web Development Intern at Krushki IT -->
+            <div class="experience-item">
+              <div>
+                <p class="exp-period">Aug 2025 – Feb 2026</p>
+                <h3 class="exp-role">Web Development Intern</h3>
+                <p class="exp-company">Krushki IT E-Commerce Pvt. Ltd., Rajkot</p>
+              </div>
+              <ul class="exp-duties">
+                <li class="exp-duty-item">
+                  <span class="bullet-dot"></span>
+                  <span>Built responsive web application features with React.js, JavaScript, HTML, and CSS.</span>
+                </li>
+                <li class="exp-duty-item">
+                  <span class="bullet-dot"></span>
+                  <span>Integrated REST APIs for dynamic data retrieval and asynchronous application workflows.</span>
+                </li>
+                <li class="exp-duty-item">
+                  <span class="bullet-dot"></span>
+                  <span>Debugged edge-case issues and improved the overall responsiveness and reliability of frontend features.</span>
+                </li>
+                <li class="exp-duty-item">
+                  <span class="bullet-dot"></span>
+                  <span>Collaborated with cross-functional teammates to deliver tested features within project deadlines.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section (Signature Deep Ink Aesthetic) -->
+      <section class="section section-dark" id="projects">
+        <div class="container">
+          <div class="projects-header-wrapper">
+            <div>
+              <p class="eyebrow eyebrow-gold">PROJECTS</p>
+              <h2 class="section-title" style="color: var(--color-canvas);">Selected work.</h2>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-btn-group">
+              <button type="button" class="filter-btn active" data-filter="all">All</button>
+              <button type="button" class="filter-btn" data-filter="mern">MERN Stack</button>
+              <button type="button" class="filter-btn" data-filter="ai-ml">AI &amp; ML</button>
+              <button type="button" class="filter-btn" data-filter="utility">Architecture &amp; Utilities</button>
+            </div>
+          </div>
+
+          <div class="projects-grid">
+            <!-- 1. StudentSphere LMS -->
+            <article class="project-card" data-category="mern">
+              <div>
+                <div class="project-image-box">
+                  <img src="assets/studentsphere.svg" alt="StudentSphere LMS preview" loading="lazy" />
+                </div>
+                <p class="project-date">MAR 2026 &bull; MERN STACK</p>
+                <h3 class="project-card-title">
+                  StudentSphere <span class="project-subtitle">— Learning Management System</span>
+                </h3>
+                <ul class="project-points">
+                  <li>Full-stack LMS with role-based access control for Admin, Instructor, and Student workflows.</li>
+                  <li>10+ RESTful APIs for course management, submissions, and grading, secured with JWT authentication.</li>
+                  <li>MongoDB data models and backend architecture designed for maintainability and scalability.</li>
+                </ul>
+                <div class="tech-tags">
+                  <span class="tech-tag">React.js</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Express.js</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">Mongoose</span>
+                  <span class="tech-tag">JWT</span>
+                </div>
+              </div>
+              <div class="project-links">
+                <a href="https://student-sphere-lms.onrender.com/" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  Live demo &nearr;
+                </a>
+                <a href="https://lms-apis-ht78.onrender.com/" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  Server API &nearr;
+                </a>
+                <a href="https://github.com/kakadiya326/student-sphere-lms" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  GitHub Code &nearr;
+                </a>
+              </div>
+            </article>
+
+            <!-- 2. Shopper E-Commerce -->
+            <article class="project-card" data-category="mern">
+              <div>
+                <div class="project-image-box">
+                  <img src="assets/shopper.svg" alt="Shopper E-Commerce preview" loading="lazy" />
+                </div>
+                <p class="project-date">SEP 2024 &bull; MERN STACK</p>
+                <h3 class="project-card-title">
+                  Shopper <span class="project-subtitle">— E-Commerce Platform</span>
+                </h3>
+                <ul class="project-points">
+                  <li>Full-stack store with REST APIs for product management, cart operations, and order processing.</li>
+                  <li>JWT authentication with separate user and admin workflows and responsive mobile-first interfaces.</li>
+                  <li>Optimized MongoDB schema design with real-time cart persistence and product filtering.</li>
+                </ul>
+                <div class="tech-tags">
+                  <span class="tech-tag">React.js</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Express.js</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">JWT</span>
+                </div>
+              </div>
+              <div class="project-links">
+                <a href="https://shopper-user.onrender.com" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  User panel &nearr;
+                </a>
+                <a href="https://shopper-admin-sd3d.onrender.com" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  Admin panel &nearr;
+                </a>
+                <a href="https://shopper-backend-7udv.onrender.com" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  Server API &nearr;
+                </a>
+                <a href="https://github.com/kakadiya326/shopper-ecommerce-mern" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  GitHub Code &nearr;
+                </a>
+              </div>
+            </article>
+
+            <!-- 3. AI Trade Opportunity API -->
+            <article class="project-card" data-category="ai-ml">
+              <div>
+                <div class="project-image-box">
+                  <img src="assets/tradeapi.svg" alt="Trade Opportunity API preview" loading="lazy" />
+                </div>
+                <p class="project-date">2025 &bull; FASTAPI &amp; AI</p>
+                <h3 class="project-card-title">
+                  Trade Opportunity API <span class="project-subtitle">— AI-Powered Market Analysis</span>
+                </h3>
+                <ul class="project-points">
+                  <li>FastAPI-based backend service integrating Google Gemini AI to analyze market opportunities.</li>
+                  <li>Secured with API Key authentication, session validation, and SlowAPI rate limiting to safeguard endpoints.</li>
+                  <li>Comprehensive interactive Swagger / OpenAPI documentation for seamless client integrations.</li>
+                </ul>
+                <div class="tech-tags">
+                  <span class="tech-tag">FastAPI</span>
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Google Gemini AI</span>
+                  <span class="tech-tag">SlowAPI</span>
+                </div>
+              </div>
+              <div class="project-links">
+                <a href="https://trade-opportunities-api-tbn4.onrender.com/docs" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  API Docs &nearr;
+                </a>
+                <a href="https://github.com/kakadiya326/trade-opportunities-api" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  GitHub Code &nearr;
+                </a>
+              </div>
+            </article>
+
+            <!-- 4. Weather Humidity Predictor -->
+            <article class="project-card" data-category="ai-ml">
+              <div>
+                <div class="project-image-box">
+                  <img src="assets/weatherpredictor.svg" alt="Weather Humidity Predictor preview" loading="lazy" />
+                </div>
+                <p class="project-date">2025 &bull; MACHINE LEARNING</p>
+                <h3 class="project-card-title">
+                  Weather Predictor <span class="project-subtitle">— ML Regression Engine</span>
+                </h3>
+                <ul class="project-points">
+                  <li>Machine learning project comparing multiple regression models (Linear, Ridge, Lasso, Random Forest).</li>
+                  <li>Data cleaning, scaling, and feature engineering pipelines for predictive accuracy.</li>
+                  <li>Trained model deployed behind a lightweight Flask REST API with responsive frontend visualization.</li>
+                </ul>
+                <div class="tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Scikit-Learn</span>
+                  <span class="tech-tag">Flask</span>
+                  <span class="tech-tag">NumPy</span>
+                  <span class="tech-tag">Pandas</span>
+                </div>
+              </div>
+              <div class="project-links">
+                <a href="https://weather-prediction-app-sigma.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  Frontend &nearr;
+                </a>
+                <a href="https://machine-learning-lshy.onrender.com" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  Server API &nearr;
+                </a>
+                <a href="https://github.com/kakadiya326/Machine-Learning" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  GitHub Code &nearr;
+                </a>
+              </div>
+            </article>
+
+            <!-- 5. System Design & SOLID Principles -->
+            <article class="project-card" data-category="utility">
+              <div>
+                <div class="project-image-box">
+                  <img src="assets/systemdesign.svg" alt="System Design and SOLID Principles preview" loading="lazy" />
+                </div>
+                <p class="project-date">2026 &bull; CLEAN ARCHITECTURE</p>
+                <h3 class="project-card-title">
+                  System Design &amp; SOLID <span class="project-subtitle">— Architecture &amp; OOP</span>
+                </h3>
+                <ul class="project-points">
+                  <li>Backend project centered on clean architecture, object-oriented design, and scalable system thinking.</li>
+                  <li>Practical implementations of SOLID principles, low-level design patterns, and concurrency trade-offs.</li>
+                  <li>Java-based file handling, modular separation, and maintainable enterprise coding standards.</li>
+                </ul>
+                <div class="tech-tags">
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">System Design</span>
+                  <span class="tech-tag">SOLID</span>
+                  <span class="tech-tag">OOP</span>
+                </div>
+              </div>
+              <div class="project-links">
+                <a href="https://system-design-solid-principles.kakadiyachiranj044.workers.dev/" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  Live Project &nearr;
+                </a>
+              </div>
+            </article>
+
+            <!-- 6. Hostel Finder -->
+            <article class="project-card" data-category="utility">
+              <div>
+                <div class="project-image-box">
+                  <img src="assets/hostelfinder.svg" alt="Hostel Finder preview" loading="lazy" />
+                </div>
+                <p class="project-date">2024 &bull; UTILITY WEB APP</p>
+                <h3 class="project-card-title">
+                  Hostel Finder <span class="project-subtitle">— Accommodation Search</span>
+                </h3>
+                <ul class="project-points">
+                  <li>Responsive web application enabling students to search, filter by location, and view hostel details.</li>
+                  <li>Mock REST API server integration using JSON-Server for persistent listings and inquiry management.</li>
+                  <li>Includes dedicated manager administrative portal for real-time room availability updates.</li>
+                </ul>
+                <div class="tech-tags">
+                  <span class="tech-tag">React.js</span>
+                  <span class="tech-tag">JSON-Server</span>
+                  <span class="tech-tag">CSS Grid</span>
+                </div>
+              </div>
+              <div class="project-links">
+                <a href="https://hostel-finders.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  Frontend &nearr;
+                </a>
+                <a href="https://managers-panel.netlify.app/login.html" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  Admin panel &nearr;
+                </a>
+                <a href="https://github.com/kakadiya326/hostel-finder-app" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  GitHub Code &nearr;
+                </a>
+              </div>
+            </article>
+
+            <!-- 7. Voice-to-Text WebApp -->
+            <article class="project-card" data-category="utility">
+              <div>
+                <div class="project-image-box">
+                  <img src="assets/voiceapp.svg" alt="Voice-to-Text WebApp preview" loading="lazy" />
+                </div>
+                <p class="project-date">2024 &bull; CLIENT-SIDE UTILITY</p>
+                <h3 class="project-card-title">
+                  Voice-to-Text App <span class="project-subtitle">— Web Speech API</span>
+                </h3>
+                <ul class="project-points">
+                  <li>Client-side utility converting voice to written text in real-time using native browser Web Speech API.</li>
+                  <li>Instant one-click copy to clipboard, adjustable speech settings, and zero external network latency.</li>
+                  <li>Completely tracker-free client processing respecting user voice privacy.</li>
+                </ul>
+                <div class="tech-tags">
+                  <span class="tech-tag">JavaScript (ES6+)</span>
+                  <span class="tech-tag">Web Speech API</span>
+                  <span class="tech-tag">HTML5</span>
+                </div>
+              </div>
+              <div class="project-links">
+                <a href="https://kakadiya326.github.io/Voice-to-Text/" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  Live demo &nearr;
+                </a>
+                <a href="https://github.com/kakadiya326/voice-to-text-webapp" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  GitHub Code &nearr;
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="section" id="skills">
+        <div class="container">
+          <p class="eyebrow">TECHNICAL SKILLS</p>
+          <h2 class="section-title">The toolkit.</h2>
+
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3 class="skill-category-title">Languages</h3>
+              <div class="skill-pills">
+                <span class="skill-pill">JavaScript (ES6+)</span>
+                <span class="skill-pill">TypeScript</span>
+                <span class="skill-pill">Python</span>
+                <span class="skill-pill">Java</span>
+                <span class="skill-pill">SQL</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3 class="skill-category-title">Frontend</h3>
+              <div class="skill-pills">
+                <span class="skill-pill">React.js</span>
+                <span class="skill-pill">React Hooks</span>
+                <span class="skill-pill">Single Page Apps (SPA)</span>
+                <span class="skill-pill">HTML5</span>
+                <span class="skill-pill">CSS3</span>
+                <span class="skill-pill">Responsive Design</span>
+                <span class="skill-pill">Axios</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3 class="skill-category-title">Backend &amp; APIs</h3>
+              <div class="skill-pills">
+                <span class="skill-pill">Node.js</span>
+                <span class="skill-pill">Express.js</span>
+                <span class="skill-pill">FastAPI</span>
+                <span class="skill-pill">REST APIs</span>
+                <span class="skill-pill">API Design</span>
+                <span class="skill-pill">CRUD Operations</span>
+                <span class="skill-pill">MVC Architecture</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3 class="skill-category-title">Database</h3>
+              <div class="skill-pills">
+                <span class="skill-pill">MongoDB</span>
+                <span class="skill-pill">Mongoose</span>
+                <span class="skill-pill">MySQL</span>
+                <span class="skill-pill">PostgreSQL</span>
+                <span class="skill-pill">Database Design</span>
+                <span class="skill-pill">Data Modeling</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3 class="skill-category-title">AI &amp; Machine Learning</h3>
+              <div class="skill-pills">
+                <span class="skill-pill">Google Gemini AI</span>
+                <span class="skill-pill">Scikit-Learn</span>
+                <span class="skill-pill">Flask</span>
+                <span class="skill-pill">NumPy</span>
+                <span class="skill-pill">Pandas</span>
+                <span class="skill-pill">Regression Models</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3 class="skill-category-title">Architecture &amp; Tools</h3>
+              <div class="skill-pills">
+                <span class="skill-pill">JWT Auth</span>
+                <span class="skill-pill">RBAC</span>
+                <span class="skill-pill">System Design</span>
+                <span class="skill-pill">SOLID Principles</span>
+                <span class="skill-pill">OOP</span>
+                <span class="skill-pill">DSA</span>
+                <span class="skill-pill">Docker</span>
+                <span class="skill-pill">Git &amp; GitHub</span>
+                <span class="skill-pill">Postman</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Verified Certifications Section -->
+      <section class="section section-alt" id="certifications">
+        <div class="container">
+          <p class="eyebrow">VERIFIED CREDENTIALS</p>
+          <h2 class="section-title">HackerRank Certifications.</h2>
+          <p class="lead-text" style="max-width: 650px; font-size: 1rem;">
+            Independently tested and verified technical certifications covering databases, problem-solving, and web standards.
+          </p>
+
+          <div class="certs-grid">
+            <!-- 1. SQL Advanced -->
+            <div class="cert-card">
+              <div>
+                <span class="cert-badge-tag">Database</span>
+                <h3 class="cert-card-title">SQL (Advanced)</h3>
+                <p class="cert-issuer">HackerRank Certified</p>
+                <p class="cert-id">ID: f65731dc9a72</p>
+              </div>
+              <a href="https://www.hackerrank.com/certificates/f65731dc9a72" target="_blank" rel="noopener noreferrer" class="cert-link">
+                Verify Credential &nearr;
+              </a>
+            </div>
+
+            <!-- 2. SQL Intermediate -->
+            <div class="cert-card">
+              <div>
+                <span class="cert-badge-tag">Database</span>
+                <h3 class="cert-card-title">SQL (Intermediate)</h3>
+                <p class="cert-issuer">HackerRank Certified</p>
+                <p class="cert-id">ID: 35a405f8c8fd</p>
+              </div>
+              <a href="https://www.hackerrank.com/certificates/35a405f8c8fd" target="_blank" rel="noopener noreferrer" class="cert-link">
+                Verify Credential &nearr;
+              </a>
+            </div>
+
+            <!-- 3. SQL Basic -->
+            <div class="cert-card">
+              <div>
+                <span class="cert-badge-tag">Database</span>
+                <h3 class="cert-card-title">SQL (Basic)</h3>
+                <p class="cert-issuer">HackerRank Certified</p>
+                <p class="cert-id">ID: 2d8be1b55eec</p>
+              </div>
+              <a href="https://www.hackerrank.com/certificates/2d8be1b55eec" target="_blank" rel="noopener noreferrer" class="cert-link">
+                Verify Credential &nearr;
+              </a>
+            </div>
+
+            <!-- 4. Python Basic -->
+            <div class="cert-card">
+              <div>
+                <span class="cert-badge-tag">Languages</span>
+                <h3 class="cert-card-title">Python (Basic)</h3>
+                <p class="cert-issuer">HackerRank Certified</p>
+                <p class="cert-id">ID: 5e7371e31f8f</p>
+              </div>
+              <a href="https://www.hackerrank.com/certificates/5e7371e31f8f" target="_blank" rel="noopener noreferrer" class="cert-link">
+                Verify Credential &nearr;
+              </a>
+            </div>
+
+            <!-- 5. JavaScript Basic -->
+            <div class="cert-card">
+              <div>
+                <span class="cert-badge-tag">Frontend</span>
+                <h3 class="cert-card-title">JavaScript (Basic)</h3>
+                <p class="cert-issuer">HackerRank Certified</p>
+                <p class="cert-id">ID: 93db4c105a76</p>
+              </div>
+              <a href="https://www.hackerrank.com/certificates/93db4c105a76" target="_blank" rel="noopener noreferrer" class="cert-link">
+                Verify Credential &nearr;
+              </a>
+            </div>
+
+            <!-- 6. CSS Basic -->
+            <div class="cert-card">
+              <div>
+                <span class="cert-badge-tag">Frontend</span>
+                <h3 class="cert-card-title">CSS (Basic)</h3>
+                <p class="cert-issuer">HackerRank Certified</p>
+                <p class="cert-id">ID: 14b47cd9d77f</p>
+              </div>
+              <a href="https://www.hackerrank.com/certificates/14b47cd9d77f" target="_blank" rel="noopener noreferrer" class="cert-link">
+                Verify Credential &nearr;
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section class="section" id="education">
+        <div class="container">
+          <p class="eyebrow">EDUCATION</p>
+          <h2 class="section-title">Formal grounding.</h2>
+
+          <div class="education-grid">
+            <div class="edu-card">
+              <p class="edu-period">July 2024 – Apr 2026</p>
+              <h3 class="edu-degree">Master of Computer Applications (MCA)</h3>
+              <p class="edu-school">RK University, Rajkot, Gujarat</p>
+              <span class="edu-score">CGPA 8.47 / 10</span>
+            </div>
+
+            <div class="edu-card">
+              <p class="edu-period">Feb 2021 – Apr 2023</p>
+              <h3 class="edu-degree">Bachelor of Computer Applications (BCA)</h3>
+              <p class="edu-school">Saurashtra University, Rajkot, Gujarat</p>
+              <span class="edu-score">CGPA 8.51 / 10</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section section-dark" id="contact">
+        <div class="container contact-container">
+          <p class="eyebrow eyebrow-gold">CONTACT</p>
+          <h2 class="section-title" style="color: var(--color-canvas);">
+            Let's build something together.
+          </h2>
+
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <span>Email:</span>
+              <a href="mailto:kakadiyachiranj044@gmail.com">kakadiyachiranj044@gmail.com</a>
+            </div>
+            <div class="contact-info-item">
+              <span>Phone:</span>
+              <a href="tel:+919016291573">+91 90162 91573</a>
+            </div>
+            <div class="contact-info-item">
+              <span>Location:</span>
+              <span>Amreli, Gujarat — Open to Relocation (Pune / Remote)</span>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Message Form -->
+          <div class="contact-form-box">
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Jane Doe" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="e.g. jane@company.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Hi Chiranj, I would like to discuss an opportunity..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-dark" style="width: 100%;">
+                Send an email
+              </button>
+
+              <div id="form-success-message" style="display: none; margin-top: 1rem; color: var(--color-gold); font-size: 0.8125rem; text-align: center;">
+                ✓ Preparing message in your email client...
+              </div>
+            </form>
+          </div>
+
+          <div class="contact-social-row">
+            <a href="https://github.com/kakadiya326" target="_blank" rel="noopener noreferrer">
+              GitHub &nearr;
+            </a>
+            <a href="https://www.linkedin.com/in/chiranj-kakadiya-b50817319" target="_blank" rel="noopener noreferrer">
+              LinkedIn &nearr;
+            </a>
+            <a href="Chiranj_Kakadiya_Resume.pdf" download="Chiranj_Kakadiya_Resume.pdf">
+              Resume (PDF) &nearr;
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p class="footer-copyright">
+          &copy; 2026 Chiranj Kakadiya. All rights reserved.
+        </p>
+
+        <div class="footer-social-links">
+          <a href="https://github.com/kakadiya326" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/chiranj-kakadiya-b50817319" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
+          <a href="mailto:kakadiyachiranj044@gmail.com">
+            Email
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Pure Vanilla JavaScript -->
+    <script src="script.js"></script>
   </body>
 </html>
