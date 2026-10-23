@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    
+    <!-- Accent Gradient Teal-Blue -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14b8a6" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <!-- Glass Overlay Gradient -->
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="white" stop-opacity="0.02" />
+    </linearGradient>
+  </defs>
+
+  <!-- Base Canvas -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" />
+
+  <!-- Grid Layout -->
+  <g opacity="0.12">
+    <line x1="0" y1="50" x2="800" y2="50" stroke="#14b8a6" stroke-width="1" />
+    <line x1="0" y1="150" x2="800" y2="150" stroke="#14b8a6" stroke-width="1" />
+    <line x1="0" y1="250" x2="800" y2="250" stroke="#14b8a6" stroke-width="1" />
+    <line x1="0" y1="350" x2="800" y2="350" stroke="#14b8a6" stroke-width="1" />
+    <line x1="100" y1="0" x2="100" y2="450" stroke="#14b8a6" stroke-width="1" />
+    <line x1="300" y1="0" x2="300" y2="450" stroke="#14b8a6" stroke-width="1" />
+    <line x1="500" y1="0" x2="500" y2="450" stroke="#14b8a6" stroke-width="1" />
+    <line x1="700" y1="0" x2="700" y2="450" stroke="#14b8a6" stroke-width="1" />
+  </g>
+
+  <!-- Glowing background aura -->
+  <circle cx="300" cy="200" r="130" fill="#14b8a6" opacity="0.1" filter="blur(65px)"/>
+  <circle cx="500" cy="220" r="130" fill="#6366f1" opacity="0.08" filter="blur(65px)"/>
+
+  <!-- Main Window -->
+  <rect x="150" y="80" width="500" height="290" rx="16" fill="url(#glassGrad)" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" />
+  
+  <!-- Header elements -->
+  <line x1="150" y1="130" x2="650" y2="130" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" />
+  <circle cx="180" cy="105" r="5" fill="#ef4444" />
+  <circle cx="196" cy="105" r="5" fill="#eab308" />
+  <circle cx="212" cy="105" r="5" fill="#22c55e" />
+  <rect x="250" y="98" width="100" height="14" rx="7" fill="rgba(255,255,255,0.05)" />
+  
+  <!-- Shopping Cart Icon in Nav -->
+  <circle cx="610" cy="105" r="12" fill="rgba(20, 184, 166, 0.15)" />
+  <path d="M604 100 H607 L609 107 H615 L617 102 H608" fill="none" stroke="#14b8a6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="610" cy="111" r="1.5" fill="#14b8a6" />
+  <circle cx="614" cy="111" r="1.5" fill="#14b8a6" />
+
+  <!-- E-Commerce Cards -->
+  <!-- Product Card 1 -->
+  <rect x="180" y="155" width="135" height="185" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" />
+  <rect x="195" y="170" width="105" height="85" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" />
+  <!-- Abstract Shoes visual -->
+  <path d="M210 230 L225 210 L255 215 L285 200 L275 230 Z" fill="url(#accentGrad)" opacity="0.8" />
+  <rect x="195" y="270" width="85" height="10" rx="5" fill="var(--text-primary)" />
+  <rect x="195" y="290" width="50" height="8" rx="4" fill="rgba(255,255,255,0.2)" />
+  <!-- Cart badge -->
+  <rect x="260" y="310" width="40" height="18" rx="9" fill="#14b8a6" opacity="0.2" />
+  <rect x="270" y="315" width="20" height="8" rx="4" fill="#14b8a6" />
+
+  <!-- Product Card 2 -->
+  <rect x="332" y="155" width="135" height="185" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" />
+  <rect x="347" y="170" width="105" height="85" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" />
+  <!-- Abstract phone mockup -->
+  <rect x="385" y="180" width="30" height="65" rx="6" fill="#6366f1" opacity="0.4" />
+  <circle cx="400" cy="187" r="2" fill="#fff" />
+  <rect x="347" y="270" width="70" height="10" rx="5" fill="var(--text-primary)" />
+  <rect x="347" y="290" width="45" height="8" rx="4" fill="rgba(255,255,255,0.2)" />
+  <rect x="412" y="310" width="40" height="18" rx="9" fill="#14b8a6" opacity="0.2" />
+  <rect x="422" y="315" width="20" height="8" rx="4" fill="#14b8a6" />
+
+  <!-- Product Card 3 (partially visible/small sidebar check-out preview) -->
+  <rect x="485" y="155" width="145" height="185" rx="12" fill="rgba(15,23,42,0.6)" stroke="rgba(255,255,255,0.08)" />
+  <rect x="500" y="175" width="115" height="15" rx="7" fill="url(#accentGrad)" />
+  <line x1="500" y1="210" x2="615" y2="210" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+  
+  <rect x="500" y="225" width="60" height="8" rx="4" fill="rgba(255,255,255,0.2)" />
+  <rect x="585" y="225" width="30" height="8" rx="4" fill="rgba(255,255,255,0.3)" />
+
+  <rect x="500" y="245" width="70" height="8" rx="4" fill="rgba(255,255,255,0.2)" />
+  <rect x="585" y="245" width="30" height="8" rx="4" fill="rgba(255,255,255,0.3)" />
+
+  <line x1="500" y1="270" x2="615" y2="270" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+  <rect x="500" y="285" width="40" height="10" rx="5" fill="var(--text-primary)" />
+  <rect x="575" y="285" width="40" height="10" rx="5" fill="#14b8a6" />
+  
+  <rect x="500" y="310" width="115" height="20" rx="10" fill="#14b8a6" opacity="0.8" />
+  
+</svg>

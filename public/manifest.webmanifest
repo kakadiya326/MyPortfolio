@@ -1,0 +1,10 @@
+{
+  "name": "Chiranj Kakadiya",
+  "short_name": "Chiranj Kakadiya",
+  "description": "Full-stack developer building web apps with React, Node.js and MongoDB.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F6F4EF",
+  "theme_color": "#F6F4EF",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
